@@ -11,7 +11,9 @@ def get_other_customer_webb():
         'zipcode':  "37141",
         'city': "Karlskrona",
         'nationality': "Sweden",
-        'email': "emil.erlandsson@gmail.com"
+        'email': "emil.erlandsson@gmail.com",
+        'phone': "0701234567",
+        'imsi': "IMSI_9876543210",
     }
 
 
@@ -25,7 +27,7 @@ def get_other_customer_db():
         'Zip':  "37141",
         'City': "Karlskrona",
         'Nationality': "Sweden",
-        'Email': "emil.erlandsson@gmail.com"
+        'Email': "emil.erlandsson@gmail.com",
     }
 
 
@@ -38,7 +40,17 @@ def get_customers():
     return customers
 
 
-def assertCustomerShown(customer, driver):
+def get_full_customer(id):
+    result = requests.get('http://127.0.0.1:6399/' +
+                          'full_customer/%d' % (customer_id))
+    if result.status_code == 200:
+        customer = result.json()
+    else:
+        raise Exception('error when fetching customers')
+    return customer
+
+
+def isCustomerDisplayed(customer, driver):
     assertStatus = True
     try:
         firstname = driver.find_element_by_id('firstname')
@@ -94,5 +106,22 @@ def assertCustomerShown(customer, driver):
         assert email.get_attribute('value') == customer['Email']
     except:
         print('email failed')
+        assertStatus = False
+    return assertStatus
+
+
+def isEquipmentDisplayed(customer, driver):
+    assertStatus = True
+    try:
+        firstname = driver.find_element_by_id('phone')
+        assert firstname.get_attribute('value') == customer['Firstname']
+    except:
+        print('firstname failed')
+        assertStatus = False
+    try:
+        firstname = driver.find_element_by_id('imsi')
+        assert firstname.get_attribute('value') == customer['Firstname']
+    except:
+        print('firstname failed')
         assertStatus = False
     return assertStatus

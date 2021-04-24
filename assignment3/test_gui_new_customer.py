@@ -2,7 +2,7 @@ import pytest
 from fixtures import db_clean, customers
 from selenium import webdriver
 import time
-from customer_data import get_other_customer_webb, get_other_customer_db, assertCustomerShown, get_customers
+from customer_data import get_other_customer_webb, get_other_customer_db, isCustomerDisplayed, get_customers, get_full_customer
 
 
 class TestNewCustomer:
@@ -27,17 +27,27 @@ class TestNewCustomer:
             element.send_keys(value)
             time.sleep(0.1)  # yes this will slow the suite down.
 
-            # click save
+        # click save
         save_btn = driver.find_element_by_id('save_customer_btn')
         save_btn.click()
         time.sleep(0.5)  # yes this will slow the suite down.
 
-        # assert customer is in database
-        # click new customer
+        # get the new customer from the DB
         all_customers = get_customers()
-        last_customer = all_customers.pop()
-        created_customer = driver.find_element_by_id(last_customer['ID'])
+        print(all_customers)
+        customer_from_db = all_customers.pop()
+        other_customer = get_other_customer_db()
 
+        # check that the customer is the same as the customer added.
+        for key, value in other_customer.items():
+            element = driver.find_element_by_id(key)
+            element.clear()
+            element.send_keys(value)
+        assert other_customer == customer_from_db
+        # yes this will slow the suite down.
+
+        # click new customer
+        created_customer = driver.find_element_by_id(customer_from_db['ID'])
         assert created_customer is not None
         assert created_customer.text == '{} {}'.format(
             new_customer['firstname'], new_customer['lastname'])
@@ -45,7 +55,7 @@ class TestNewCustomer:
         time.sleep(0.5)
 
         # check that each of the fields have been filled in correctly
-        customerShownCorrect = assertCustomerShown(
+        customerShownCorrect = isCustomerDisplayed(
             get_other_customer_db(), driver)
         driver.close()
         self.dbClean(self)

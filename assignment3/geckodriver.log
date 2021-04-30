@@ -849,3 +849,84 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1619786082692	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript error: http://127.0.0.1/vue.js line 10774 > Function, line 3: TypeError: editIMSI is not a function
 1619786085215	Marionette	INFO	Stopped listening on port 42287
+1619791077897	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.P4VVInVJ2Kms"
+1619791080144	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619791086235	Marionette	INFO	Listening on port 36023
+1619791086397	Marionette	WARN	TLS certificate errors will be ignored for this session
+1619791088883	Marionette	INFO	Stopped listening on port 36023
+1619791090886	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.aAH8ybdOWlx0"
+1619791091586	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619791095021	Marionette	INFO	Listening on port 35907
+1619791095158	Marionette	WARN	TLS certificate errors will be ignored for this session
+1619791097408	Marionette	INFO	Stopped listening on port 35907
+1619791099406	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.DihjWo1R8vmd"
+1619791100072	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619791103486	Marionette	INFO	Listening on port 45615
+1619791103585	Marionette	WARN	TLS certificate errors will be ignored for this session
+1619791107287	Marionette	INFO	Stopped listening on port 45615
+1619791109363	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.XMF43WnX28sL"
+1619791110043	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619791113505	Marionette	INFO	Listening on port 46461
+1619791113620	Marionette	WARN	TLS certificate errors will be ignored for this session
+1619791117566	Marionette	INFO	Stopped listening on port 46461
+1619791119558	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Jhbc8vMIShbH"
+1619791120204	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619791123809	Marionette	INFO	Listening on port 42551
+1619791123914	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://127.0.0.1/vue.js line 10774 > Function, line 3: TypeError: editIMSI is not a function
+1619791126558	Marionette	INFO	Stopped listening on port 42551
+1619791226150	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.dZNhlvsUrWwH"
+1619791226825	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619791230213	Marionette	INFO	Listening on port 39825
+1619791230291	Marionette	WARN	TLS certificate errors will be ignored for this session
+1619791231917	Marionette	INFO	Stopped listening on port 39825
+1619791234067	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.05v12cfTiXpa"
+1619791234741	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619791238472	Marionette	INFO	Listening on port 39881
+1619791238527	Marionette	WARN	TLS certificate errors will be ignored for this session
+1619791240890	Marionette	INFO	Stopped listening on port 39881
+1619791242858	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.odH74c7dShvR"
+1619791243559	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619791247377	Marionette	INFO	Listening on port 43437
+1619791247515	Marionette	WARN	TLS certificate errors will be ignored for this session
+1619791251444	Marionette	INFO	Stopped listening on port 43437
+1619791253402	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.eJtsgcvqfcYp"
+1619791254071	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619791257529	Marionette	INFO	Listening on port 42255
+1619791257609	Marionette	WARN	TLS certificate errors will be ignored for this session
+1619791261821	Marionette	INFO	Stopped listening on port 42255
+1619791263829	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.wfK3I6lD5EM2"
+1619791264542	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619791268006	Marionette	INFO	Listening on port 37957
+1619791268156	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://127.0.0.1/vue.js line 10774 > Function, line 3: TypeError: editIMSI is not a function
+1619791270740	Marionette	INFO	Stopped listening on port 37957
+1619791319539	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.b59KLW36RvHo"
+1619791320224	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619791323824	Marionette	INFO	Listening on port 40871
+1619791323955	Marionette	WARN	TLS certificate errors will be ignored for this session
+1619791325940	Marionette	INFO	Stopped listening on port 40871
+1619791327905	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.pc2W5LokOOMt"
+1619791328577	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619791332330	Marionette	INFO	Listening on port 43689
+1619791332419	Marionette	WARN	TLS certificate errors will be ignored for this session
+1619791335312	Marionette	INFO	Stopped listening on port 43689
+1619791337383	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.ZGnyhCYZPwKR"
+1619791338047	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619791341526	Marionette	INFO	Listening on port 44903
+1619791341635	Marionette	WARN	TLS certificate errors will be ignored for this session
+1619791345124	Marionette	INFO	Stopped listening on port 44903
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined

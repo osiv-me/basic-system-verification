@@ -47,7 +47,7 @@ class MockCursor(object):
         )
 
     def no_return(self):
-        return ""
+        return None
 
     def execute(self,arg,args):
         return True

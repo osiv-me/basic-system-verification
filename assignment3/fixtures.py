@@ -2,17 +2,17 @@ import pytest
 import shutil
 import requests
 from selenium import webdriver
-
+from environmentVariables import db_backup_path,db_path,URL,localhost_port
 
 @pytest.fixture()
 def db_clean():
-    shutil.copy('/home/pft/restapi/point-of-sale/pos_bak.db',
-                '/home/pft/restapi/point-of-sale/pos.db')
+    shutil.copy(db_backup_path,
+                db_path)
 
 
 @pytest.fixture()
 def customers():
-    result = requests.get('http://127.0.0.1:6399/' + "customers")
+    result = requests.get(localhost_port + "customers")
     if result.status_code == 200:
         customers = result.json()
     else:
@@ -24,6 +24,6 @@ def customers():
 @pytest.fixture()
 def driver():
     driver = webdriver.Firefox()
-    driver.get('http://127.0.0.1')
+    driver.get(URL)
     yield driver
     driver.close()
